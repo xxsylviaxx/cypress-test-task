@@ -1,0 +1,17 @@
+{
+  "urls": {
+  "crossOrginUrl": "https://7186369.hs-sites.com"
+  },
+  "navigation": {
+    "homePage": "Nobl9",
+    "menuItem": "Resources",
+    "subPage": "Blog"
+  },
+  "contactDetails": {
+    "email": "johndoe@testemail.com",
+    "firstName": "John",
+    "lastName": "Doe",
+    "companyName": "Nobl9",
+    "jobTitle": "QA Engenieer"
+  }
+}
