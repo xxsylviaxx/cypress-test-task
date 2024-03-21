@@ -1,8 +1,3 @@
-import { Selectors } from "../support/selectors";
-
-const selectors = new Selectors();
-
-
 describe('Recruitment Task', () => {
 
   before(function () {
@@ -15,11 +10,11 @@ describe('Recruitment Task', () => {
     cy.navigateMenu(this.testData.navigation.menuItem, this.testData.navigation.subPage);
     cy.openFirstBlogPost();
     cy.clickRequestDemo();
-    cy.fillInForm(this.testData.contactDetails.email,
+    cy.fillInReqestDemoForm(this.testData.contactDetails.email,
       this.testData.contactDetails.firstName,
       this.testData.contactDetails.lastName,
       this.testData.contactDetails.companyName,
       this.testData.contactDetails.jobTitle);
-    cy.closeForm();
+    cy.closeRequestDemoForm();
   });
 });

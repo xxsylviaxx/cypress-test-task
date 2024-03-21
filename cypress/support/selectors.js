@@ -1,4 +1,4 @@
-export class Selectors {
+export class Nobl9DemoSelectors {
     titleLogo = '.hs-image-widget ';
     pageTitle = 'h1';
     blogsSection = 'section.blog-index';

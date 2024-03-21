@@ -1,7 +1,7 @@
-import { Selectors } from "./selectors";
+import { Nobl9DemoSelectors } from "./selectors";
 
 
-const selectors = new Selectors();
+const selectors = new Nobl9DemoSelectors();
 let blogPostTitleText
 
 Cypress.Commands.add('loadNoble9', (baseUrl, crossDomainUrl, pageTitle) => { 
@@ -62,7 +62,7 @@ Cypress.Commands.add('verifyValue', (iframeContent, locator, value) => {
     .should('contain', value);
 });
 
-Cypress.Commands.add('fillInForm', (email, firstName, lastName, company, jobTitle) => {
+Cypress.Commands.add('fillInReqestDemoForm', (email, firstName, lastName, company, jobTitle) => {
   cy.get(selectors.formIframe)
     .then($iframe => {
       const iframeContent = $iframe
@@ -84,7 +84,7 @@ Cypress.Commands.add('fillInForm', (email, firstName, lastName, company, jobTitl
     }); 
 });
 
-Cypress.Commands.add('closeForm', () => {
+Cypress.Commands.add('closeRequestDemoForm', () => {
   cy.get(selectors.formIframe)
     .then($iframe => {
       const buttonContainer = $iframe
